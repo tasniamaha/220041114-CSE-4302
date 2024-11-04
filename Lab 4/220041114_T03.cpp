@@ -61,6 +61,9 @@ class BankAccount{
         cout<<"Account of "<<account_name<<" with account no "<<account_num<<" is destroyed with a balance BDT "<<current_balance<<endl;
     }
 };
+int BankAccount::tot_account=0;
+int BankAccount::active_account=0;
+double BankAccount::tot_tax=0.0;
 BankAccount Larger(BankAccount ac1,BankAccount ac2){
     if(ac1.getbalance()>ac2.getbalance()){
         return ac1;
